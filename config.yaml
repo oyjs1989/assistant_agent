@@ -1,0 +1,32 @@
+# Assistant Agent 配置文件
+
+# 服务器配置
+server:
+  host: "localhost"
+  port: 8080
+  url: "ws://localhost:8080/ws"
+
+# Agent 配置
+agent:
+  id: "" # 留空将自动生成
+  name: "assistant-agent"
+  version: "1.0.0"
+  heartbeat: 30 # 心跳间隔（秒）
+  max_retries: 3
+  retry_delay: 5 # 重试延迟（秒）
+  container_mode: false
+  # 目录配置已移除，现在使用系统标准目录
+  # temp_dir, log_dir, work_dir, data_dir 由系统自动决定
+
+# 日志配置
+logging:
+  level: "info" # debug, info, warn, error
+  format: "json" # json, text
+  file: "assistant_agent.log"
+
+# 安全配置
+security:
+  token: "" # 认证令牌
+  cert_file: "" # SSL 证书文件路径
+  key_file: "" # SSL 密钥文件路径
+  verify_ssl: true

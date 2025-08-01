@@ -1,0 +1,44 @@
+# 二进制文件
+assistant_agent
+assistant_agent.exe
+assistant_agent_*
+
+# 构建目录
+dist/
+build/
+
+# 依赖目录
+vendor/
+
+# 日志文件
+*.log
+logs/
+
+# 配置文件（包含敏感信息）
+config.local.yaml
+*.key
+*.pem
+*.crt
+
+# 测试覆盖率文件
+coverage.out
+coverage.html
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# Go 相关
+*.test
+*.prof 
